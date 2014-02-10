@@ -1,0 +1,56 @@
+BUZZ TALK is the term to distinguish the code that is in the frametype_profiles and command_profiles.  It is currently under development, but the point of BUZZ TALK is such:
+
+Instead of having to recode this program or fix code in perl itself, we've created a small language to help better format the information received from the Xbee Coordinator.
+
+Look under frametype_profiles.  There should be different frametypes listed.  If you open up a frametype you see do not remove the first line.  This is just to comment and to explain.  IN the comment line, there should be the following => hashref, startbyte, reflength,type.  Here's what those mean
+
+
+hashref : What is the name in the code by which you want to access the data.  IE, when you need to pull up information about a Node Identifier after sending the NI command, what are you going to call the Node Identifier -- thus Node_ID
+
+startbyte : where this particular hashref begins its byte out of the whole API frame.
+
+reflength : how many bytes is the hashref made of
+
+type : You can display either CHAR, HEX, or DEC right now.  Others will not work.
+
+
+EXAMPLE
+
+Net_Addr:8:2:HEX
+
+We want the Net_Addr of a particular frame to start at the 8th byte, be composed of the 8th and 9th bytes, and we want to capture the value in hex form.
+
+
+OPTIONS
+The options are the cool part about BUZZ TALK.  These options essentially allow a user to 'Switch' the data received, without having to do it in the code.  Thus, if you're receiving bytes back, but don't always remember what a particular byte or status means given the hex digit, you can code this into the command profile.  
+
+OPTIONS EXAMPLE
+
+Command_Status:7:1:HEX?00=OK|01=ERROR
+
+Here, we are expecting a Command_status at byte 7, with only byte 7 being the command status bit, because there is a reflength of 1.  We have chosen to display in HEX, we seperate the switch values with a '?' and then tie each pair together using an equals sign.  So, if the command_status byte ends up being a '00', the data captured will actually say
+
+Command_Status : OK
+
+MATH
+Currently, basic operators are supported within the command profiles.  One can use addition, multiplication, subtraction and division.  Further math statements will be added in later releases.  Only the DEC and HEX formats are supported with MATH use.  Note that the code for both is the same, the output for HEX is different.  Note that the output for HEX is just a basix 'sprintf("%x",$code)' therefore, the length will be variable.
+
+MATH EXAMPLE
+Data_RX:^:#:DEC&/,2,*,4
+
+Here, the '&' operator is used to split the TYPE from the command stack.  The first operation will be to '/' or divide Data_RX by '2'.  The next option will be to '*' multiply the Data_RX by '4'.  NOTE that only one operator and then a following number may be used to scale the received data.
+
+USING MATH AND OPTIONS TOGETHER
+If you want to use the options together, merely place the MATH commands after the OPTIONS.  Please see the example.
+
+Data_RX:^:#:DEC?2=This is two|4=This is four&*,2
+
+In the above example, the Data_RX say is 1.  Thus, there is the math operator '&' after all the switch options are done.  A '*' and '2' are present indicating that Data_RX will be multiplied by 2.  In this case, we would expect the output Data_RX then to read "This is two".
+
+
+QUICK CHARS
+Quick characters allow a user to be uncertain about byte placement.  There are two characters so far.  
+
+^ : Carrot - say you don't know where a startbyte actually starts a hashref byte.  You can use this character to basically say , "Start this hashref byte where the previous one left off".  Therefore, you do not need to keep track of bytes but merely order.
+
+# : Pound - Say you don't know when something is going to end, or you don't care about the order of bytes anymore.  You can use this character as the "reflength" to say to go to all bytes up to the checksum.

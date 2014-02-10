@@ -1,0 +1,5 @@
+FILE MUST MATCH NAME IN frametype.config - DO NOT REMOVE FIRST LINE => hashref:bytestart:length:display_type
+Length:1:2:DEC
+Frame_ID:4:1:HEX
+Sent_CMD:5:2:CHAR
+Command_Status:7:1:DEC?0=OK|1=ERROR|2=Invalid Command|3=Invalid Parameter|4=TX Failure|default=UNKNOWN

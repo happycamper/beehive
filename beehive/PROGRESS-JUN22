@@ -1,0 +1,25 @@
+June 22, 2011
+
+*Took away the MYSQL functionality for now
+*Added the function for receiving data_io_rx samples
+*added '--verbose' to the command line to explain RX data
+*added an rx.log to keep track of all packets received
+*added a serial.config to change the baud settings w/ functions in dirs.pl and xbee_subs
+
+-Jeff
+
+
+June 25, 2011
+*Added BUZZ TALK, see config/BUZZTALK
+*Added command_profiles and frametype_profiles.  These basically make this platform limitless
+*Added simple mysql table for network_devices
+
+July 4, 2011
+*Added MATH to buzz talk
+*Created Simple RRD engine
+*Fixed some bugs in hashes
+*capable of capturing all A/D data and store in RRD database.
+
+July 12, 2011
+*Added graphing
+*Added event_profiles for autonomous events/reconfigurations

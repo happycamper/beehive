@@ -1,0 +1,10 @@
+THIS IS A COMMAND PROFILE - USED in ANALYZE_RETURN SEE USERS MANUAL FOR OPTIONS =>hashref:startbyte:reflength:type/options
+Net_Addr:8:2:HEX
+Serial_High:10:4:HEX
+Serial_Low:14:4:HEX
+Node_ID:18:0:CHAR
+Parent_Addr:^:2:HEX
+Device_Type:^:1:DEC?0=COORDINATOR|1=ROUTER|2=END DEVICE
+Device_Status:^:1:DEC?0=OK|1=ERROR|2=INVALID COMMAND
+Profile_ID:^:2:HEX
+Manufacturer_ID:^:2:HEX

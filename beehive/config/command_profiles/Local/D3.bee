@@ -1,0 +1,2 @@
+DO NOT REMOVE THE FIRST LINE => hashref:startbyte:reflength(bytes):type
+Data_RX:^:#:HEX?00=Disabled|01=CTS FLow Control|03=Digital Input|04=Digital Output Low|05=Digital Output High|06=RS-485 Transmit Low Enable|07=RS-485 transmit high enable

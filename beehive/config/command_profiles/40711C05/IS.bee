@@ -1,0 +1,7 @@
+DO NOT REMOVE THE FIRST LINE **NOTE DO NOT CHANGE Analog_Data from HEX and do not change names of Higher_Digital_Pins and Lower_Digital_Pins, this will change code elsewhere in xbee_subs.pl=> hashref:startbyte:reflength(bytes):type
+Num_Samples:^:1:HEX
+Higher_Digital_Pins:^:1:HEX
+Lower_Digital_Pins:^:1:HEX?01=D0|02=D1|03=D0,D1|04=D2|05=D0,D2|06=D1,D2|07=D0,D1,D2|08=D3|09=D0,D3|0A=D1,D3|0B=D0,D1,D3|0C=D2,D3|0D=D0,D2,D3|0E=D1,D2,D3|0F=D0,D1,D2,D3
+Analog_Pins:^:1:HEX?01=A0|02=A1|03=A0,A1|04=A2|05=A0,A2|06=A1,A2|07=A0,A1,A2|08=A3|09=A0,A3|0A=A1,A3|0B=A0,A1,A3|0C=A2,A3|0D=A0,A2,A3|0E=A1,A2,A3|0F=A0,A1,A2,A3
+Digital_Data:^:2:HEX?0000=All Pins Low|0001=D0|0002=D1|0003=D0,D1|0004=D2|0005=D0,D2|0006=D1,D2|0007=D0,D1,D2|0008=D3|0009=D0,D3|000A=D1,D3|000B=D0,D1,D3|000C=D2,D3|000D=D0,D2,D3|000E=D1,D2,D3|000F=D0,D1,D2,D3
+Analog_Data:^:#:HEX

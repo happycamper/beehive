@@ -1,0 +1,2 @@
+DO NOT REMOVE THE FIRST LINE => hashref:startbyte:reflength(bytes):type
+Data_RX:^:#:HEX?00=No Parity|01=Event Parity|02=Odd Parity|03=Mark Parity

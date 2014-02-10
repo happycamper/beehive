@@ -1,0 +1,23 @@
+DO NOT REMOVE THE FIRST LINE
+RRD_DATABASE:html/rrd/
+WEB:html/htdocs/
+CGIBIN:html/cgi-bin/
+MYSQLUSER:beehive
+MYSQLPASSWD:bees
+MYSQL_DB:beehive
+MYSQL_HOST:localhost
+SQL:mysql/
+GRAPHICS:html/htdocs/css/graphics/
+GRAPHS:html/htdocs/css/graphics/graphs/
+LOG:html/logs/
+ERROR_LOG:error.log
+PROCESS_LOG:process.log
+RXLOG:rx.log
+EVENTS:events.config
+XBEECOMMANDS:commands.config
+FRAMETYPE:frametype.config
+SERIAL:serial.config
+FRAMETYPE_PROFILES:frametype_profiles/
+COMMAND_PROFILES:command_profiles/
+EVENT_PROFILES:event_profiles/
+LOCAL:Local.config

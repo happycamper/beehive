@@ -1,0 +1,2 @@
+DO NOT REMOVE THE FIRST LINE => hashref:startbyte:reflength(bytes):type
+Data_RX:^:#:DEC?0=1200|1=2400|2=4800|3=9600|4=19200|5=38400|6=57600|7=115200

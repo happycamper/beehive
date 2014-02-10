@@ -1,0 +1,8 @@
+KEEP THIS FIRST LINE => hashref:startbyte:reflength:type?[options]
+Length:1:2:DEC
+Frame_ID:4:1:HEX
+Serial_High:5:4:HEX
+Serial_Low:9:4:HEX
+Remote_Addr:13:2:HEX
+Sent_CMD:15:2:CHAR
+Command_Status:17:1:DEC?0=OK|1=ERROR|2=Invalid Command|3=Invalid Parameter|4=TX Failure

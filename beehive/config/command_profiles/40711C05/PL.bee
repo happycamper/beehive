@@ -1,0 +1,2 @@
+DO NOT REMOVE THE FIRST LINE => hashref:startbyte:reflength(bytes):type varies for different versions of xbee
+Data_RX:^:#:HEX?00=-8 dBm|01=-4 dBm|02=-2 dBm|03=0 dBm|04=+2 dBm

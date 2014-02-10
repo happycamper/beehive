@@ -1,0 +1,25 @@
+DO NOT REMOVE THE FIRST LINE - THIS IS THE LAST RUN CONFIGURATION
+CONFIG:Node_ID:NI:0
+READ:Signal_Strength:DB:0
+READ:Voltage_Supply:%V:0
+READ:Serial_High:SH:0
+READ:Serial_Low:SL:0
+CONFIG:Destination_High:DH:0
+CONFIG:Destination_Low:DL:0
+READ:My_Address:MY:0
+READ:Parent_Address:MP:0
+READ:Remaining_Children:NC:0
+READ:Device_Type:DD:0
+READ:Operating_Channel:CH:0
+CONFIG:Pan_ID:ID:0
+READ:Extended_PAN_ID:OP:0
+CONFIG:Scan_Channels:SC:0
+CONFIG:Encryption_Enable:EE:0
+CONFIG:Power_Level:PL:0
+CONFIG:Power_Mode:PM:0
+READ:Signal_Strength:DB:0
+READ:Baud_Rate:BD:0
+READ:Serial_Parity:NM:0
+READ:Stop_Bits:SB:0
+READ:Software_Version:VR:0
+READ:Hardware_Version:HV:0

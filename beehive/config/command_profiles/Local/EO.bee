@@ -1,0 +1,2 @@
+DO NOT REMOVE THE FIRST LINE => hashref:startbyte:reflength(bytes):type
+Data_RX:^:#:HEX?01=Send Key During Join|02=Use Trust Center

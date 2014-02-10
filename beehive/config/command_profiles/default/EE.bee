@@ -1,0 +1,2 @@
+DO NOT REMOVE THE FIRST LINE => hashref:startbyte:reflength(bytes):type
+Data_RX:^:#:HEX?00=Encryption Disabled|01=Encryption Enabled

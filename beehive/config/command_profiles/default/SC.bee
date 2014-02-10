@@ -1,0 +1,2 @@
+DO NOT REMOVE THE FIRST LINE => hashref:startbyte:reflength(bytes):type
+Data_RX:^:#:HEX?0B=Channel 11|0C=Channel 12|0D=Channel 13|0E=Channel 14|0F=Channel 15|10=Channel 16|11=Channel 17|12=Channel 18|13=Channel 19|14=Channel 20|15=Channel 21|16=Channel 22|17=Channel 23|18=Channel 24|19=Channel 25|1A=Channel 26

@@ -1,0 +1,5 @@
+KEEP THIS FIRST LINE => hashref:startbyte:reflength:type?[options]
+Length:1:2:DEC
+Serial_High:4:4:HEX
+Serial_Low:8:4:HEX
+Remote_Addr:12:2:HEX
